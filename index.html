@@ -1,0 +1,199 @@
+<!DOCTYPE HTML5>
+<html>
+    <head>
+        <title>Python documentation|LRS STUDIOS</title>
+        <meta charset=“UTF-8”>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>
+                <h1>Python documentation page</h1>
+            </header>
+            <ul class="sections">
+                <li>
+                    <a href="#Introduction" class="nav-link">Introduction</a>
+                </li>
+                <li>
+                    <a href="#Installation" class="nav-link">Installation</a>
+                </li>
+                <li>
+                    <a href="#Basic_Syntax" class="nav-link">Basic syntax</a>
+                </li>
+                <li>
+                    <a href="#Uses_of_Python" class="nav-link">Phyton uses</a>
+                </li>
+                <li>
+                    <a href="#Reference" class="nav-link">Reference</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header><h2>Introduction</h2></header>
+                <article>
+                    <p>
+                        Python is a versatile, high-level programming language that prioritizes simplicity, readability, and ease of use. Guided by its design philosophy, "The Zen of Python," Python emphasizes code readability and clear syntax, making it an excellent choice for both beginners and experienced developers. This concise documentation provides an extended overview of Python's fundamental features, syntax, and commonly used programming concepts.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Installation">
+                <header><h2>Installation</h2></header>
+                <article>
+                    <p>
+                        Getting Python up and running on your system is a straightforward process:
+                    </p>
+                    <ol>
+                        <li class="special-list"><b>Download:</b> Start by visiting the <a href="https://www.python.org/" target="_blank">official Python website</a> and navigating to the "Downloads" section. Select the installer that corresponds to your operating system.</li>
+                        <li class="special-list"><b>Installation:</b> Run the installer executable that you downloaded. During the installation process, make sure to check the box that adds Python to your system's PATH, which enables you to run Python commands from the terminal or command prompt.</li>
+                        <li class="special-list"><b>Verification:</b> Open a terminal or command prompt and enter the command <code>python --version</code>. This should display the version number of the installed Python interpreter, confirming a successful installation.</li>
+                    </ol>
+                </article>
+            </section>
+            <section class="main-section" id="Basic_Syntax">
+                <header><h2>Basic syntax</h2></header>
+                <article>
+                    <p>
+                        Python's syntax is designed to be intuitive and human-readable. Here are some fundamental aspects:
+                    </p>
+                    <article>
+                        <h3 id="comments-h" >Comments</h3>
+                        <p>
+                            Comments are essential for code documentation and explanation:
+                        </p>
+                        <code class="codeblock">
+                            # This is a single-line comment<br>
+                            <br>
+                            """<br>
+                            This is a<br>
+                            multi-line comment<br>
+                            """
+                        </code>
+                    </article>
+                    <article>
+                        <h3 id="variables-h">Variables and datatypes</h3>
+                        <p>
+                            Python supports various data types, and variables can be assigned without explicit type declarations:
+                        </p>
+                        <code class="codeblock">
+                            name = "John"<br>
+                            age = 30<br>
+                            height = 5.11<br>
+                            is_student = True
+                        </code>
+                    </article>
+                    <article>
+                        <h3 id="printing-h">Printing</h3>
+                        <p>
+                            The <code>print()</code> function is used to display output:
+                        </p>
+                        <code class="codeblock">
+                            print("Hello, World!")<br>
+                            print(f"My name is {name} and I am {age} years old.")
+                        </code>
+                    </article>
+                    <article>
+                        <h3 id="conditions-h">Conditional statements</h3>
+                        <p>
+                            Python's <code>if</code>, <code>elif</code>, and <code>else</code> constructs allow for logical branching:
+                            <code class="codeblock">
+                                if age > 18:<br>
+                                    print("You are an adult.")<br>
+                                elif age == 18:<br>
+                                    print("You just became an adult.")<br>
+                                else:<br>
+                                    print("You are a minor.")
+                            </code>
+                        </p>
+                    </article>
+                    <article>
+                        <h3 id="loops-h">Loops</h3>
+                        <p>
+                            Python provides versatile loop structures, including <code>for</code> and <code>while</code> loops:
+                        </p>
+                        <code class="codeblock">
+                            for i in range(5):<br>
+                                print(i)<br>
+                                <br>
+                            while age < 40:<br>
+                                age += 1
+                        </code>
+                    </article>
+                    <article>
+                        <h3 id="lists-h">Lists</h3>
+                        <p>
+                            Lists are versatile containers for storing sequences of items:
+                        </p>
+                        <code class="codeblock">
+                            fruits = ["apple", "banana", "orange"]<br>
+                            fruits.append("grape")<br>
+                            print(fruits[1])  # Output: "banana"
+                        </code>
+                    </article>
+                    <article>
+                        <h3 id="functions-h">Functions</h3>
+                        <p>
+                            Functions are blocks of reusable code
+                        </p>
+                        <code class="codeblock">
+                            def greet(name):<br>
+                                return f"Hello, {name}!"<br>
+                                <br>
+                            message = greet("Alice")<br>
+                            print(message)  # Output: "Hello, Alice!"
+                        </code>
+                    </article>
+                    <article>
+                        <h3 id="classes-h">Classes</h3>
+                        <p>
+                            Object-oriented programming is a core part of Python:
+                        </p>
+                        <code class="codeblock">
+                            class Dog:<br>
+                                def __init__(self, name):<br>
+                                    self.name = name<br>
+                                    <br>
+                                def bark(self):<br>
+                                    print(f"{self.name} says Woof!")<br>
+                                    <br>
+                            dog = Dog("Buddy")<br>
+                            dog.bark()  # Output: "Buddy says Woof!"
+                        </code>
+                    </article>
+                </article>
+            </section>
+            <section class="main-section" id="Uses_of_Python">
+                <header><h2>Uses of Python</h2></header>
+                <article>
+                    <p>
+                        Python is a highly versatile programming language widely used in a variety of applications. Its readability and ease of use make it a preferred choice for web development, data analysis, artificial intelligence, task automation, desktop applications, games, and more. <br>
+                    </p>
+                    <p>
+                        Python is also used in education and training due to its clear syntax. With a wide range of libraries and frameworks, Python has become an essential tool in fields ranging from data science to test automation and natural language processing, making it invaluable in the tech industry and beyond.<br>
+                    </p>
+                    <p>
+                        All of this has placed Python on the list of the most widely used programming languages.
+                    </p>
+                    <ol>
+                        <ol>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>C#</li>
+                            <li>PHP</li>
+                        </ol>
+                    </ol>
+                </article>
+            </section>
+            <section class="main-section" id="Reference">
+                <header><h2>Reference</h2></header>
+                <article>
+                    <p>
+                        All information was taken from <a href="https://chat.openai.com/" target="_blank">chat gpt</a>
+                    </ul>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
